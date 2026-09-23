@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =====================================================
+     01. SITEMAP DO PORTFÓLIO
+
+     Arquivo utilizado por mecanismos de busca para
+     identificar as URLs públicas disponíveis no site.
+
+     Domínio principal:
+     https://matiazixavier.com.br/
+     ===================================================== -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ===================================================
+       01.1. PÁGINA PRINCIPAL
+
+       URL principal do portfólio.
+
+       Atualmente o site funciona como uma página única,
+       portanto esta é a única URL necessária no sitemap.
+       =================================================== -->
+
+  <url>
+    <loc>https://matiazixavier.com.br/</loc>
+  </url>
+
+
+  <!-- ===================================================
+       01.2. EXPANSÃO FUTURA
+
+       Caso novas páginas sejam criadas futuramente,
+       como páginas específicas de projetos, elas poderão
+       ser adicionadas seguindo o padrão abaixo.
+
+       Exemplo futuro:
+
+       <url>
+         <loc>https://matiazixavier.com.br/projetos/exemplo/</loc>
+       </url>
+
+       =================================================== -->
+
+</urlset>

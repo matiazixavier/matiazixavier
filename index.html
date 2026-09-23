@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <!-- =====================================================
+       01. CONFIGURAÇÕES BÁSICAS
+       -----------------------------------------------------
+       Define codificação de caracteres e comportamento
+       responsivo da página.
+       ===================================================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <!-- =====================================================
+       02. METADADOS DA PÁGINA
+       -----------------------------------------------------
+       Informações utilizadas pelo navegador e por
+       mecanismos de busca para identificar o portfólio.
+       ===================================================== -->
+
+  <meta
+    name="description"
+    content="Portfólio profissional de Caroline Matiazi Xavier, com experiência em Business Intelligence, Engenharia e Arquitetura de Dados, Data Quality, Data Governance e modernização de ambientes analíticos."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <title>Caroline Matiazi Xavier | Data Engineering & BI</title>
+
+  <link
+    rel="canonical"
+    href="https://matiazixavier.com.br/"
+  >
+
+
+  <!-- =====================================================
+       03. COMPARTILHAMENTO SOCIAL
+       -----------------------------------------------------
+       Metadados utilizados por LinkedIn, WhatsApp, Teams,
+       Twitter/X e outras plataformas para gerar a prévia
+       visual quando o endereço do portfólio é compartilhado.
+       ===================================================== -->
+
+  <!-- Open Graph -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Caroline Matiazi Xavier"
+  >
+
+  <meta
+    property="og:url"
+    content="https://matiazixavier.com.br/"
+  >
+
+  <meta
+    property="og:title"
+    content="Caroline Matiazi Xavier | Data Engineering & BI"
+  >
+
+  <meta
+    property="og:description"
+    content="Portfólio profissional de Caroline Matiazi Xavier, com foco em Data Engineering, Data Quality, Governance e Business Intelligence."
+  >
+
+  <meta
+    property="og:image"
+    content="https://matiazixavier.com.br/assets/images/site-share.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Caroline Matiazi Xavier | Data Engineering & BI"
+  >
+
+
+  <!-- Twitter / X -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Caroline Matiazi Xavier | Data Engineering & BI"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Data Engineering | Data Quality | Governance | Business Intelligence"
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://matiazixavier.com.br/assets/images/site-share.png"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="Caroline Matiazi Xavier | Data Engineering & BI"
+  >
+
+
+  <!-- =====================================================
+       04. DADOS ESTRUTURADOS
+       -----------------------------------------------------
+       Dados estruturados no padrão Schema.org utilizados
+       para fornecer aos mecanismos de busca informações
+       adicionais sobre a pessoa responsável pelo portfólio.
+       ===================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Caroline Matiazi Xavier",
+    "url": "https://matiazixavier.com.br/",
+    "image": "https://matiazixavier.com.br/assets/images/site-perfil.png",
+    "jobTitle": "Senior Data & BI Professional",
+    "sameAs": [
+      "https://www.linkedin.com/in/carolinematiazixavier",
+      "https://github.com/matiazixavier"
+    ]
+  }
+  </script>
+
+
+  <!-- =====================================================
+       05. IDENTIDADE VISUAL
+       -----------------------------------------------------
+       Define o favicon exibido na aba do navegador.
+       ===================================================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/images/site-favicon.png"
+  >
+
+
+  <!-- =====================================================
+       06. ESTILOS DO SITE
+       -----------------------------------------------------
+       Carrega o arquivo CSS responsável pelo layout,
+       temas, responsividade e apresentação do README.
+       ===================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+
+  <!-- =====================================================
+       07. BIBLIOTECA MARKDOWN
+       -----------------------------------------------------
+       Marked.js é utilizada para converter o conteúdo
+       do README.md em HTML no navegador.
+       ===================================================== -->
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       08. BARRA SUPERIOR
+       -----------------------------------------------------
+       Cabeçalho fixo do site contendo:
+       - nome do portfólio
+       - link para página inicial
+       - seletor Light / Dark Mode
+       ===================================================== -->
+
+  <header class="site-toolbar">
+
+    <div class="toolbar-container">
+
+      <a
+        href="https://matiazixavier.com.br"
+        class="site-name"
+        aria-label="Página inicial"
+      >
+        matiazixavier
+      </a>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Alternar entre tema claro e escuro"
+        title="Alternar tema"
+      >
+        <span id="theme-icon">🌙</span>
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       09. CONTEÚDO PRINCIPAL
+       -----------------------------------------------------
+       Área responsável por receber todo o conteúdo
+       convertido a partir do README.md.
+       ===================================================== -->
+
+  <main class="page-container">
+
+    <article
+      id="readme-content"
+      class="markdown-body"
+    >
+      <p>Carregando portfólio...</p>
+    </article>
+
+  </main>
+
+
+  <!-- =====================================================
+       10. CONTROLE DE TEMA
+       -----------------------------------------------------
+       Script responsável por:
+       - Light Mode
+       - Dark Mode
+       - preferência salva no navegador
+       ===================================================== -->
+
+  <script src="assets/js/theme.js"></script>
+
+
+  <!-- =====================================================
+       11. CARREGAMENTO DO README
+       -----------------------------------------------------
+       Lê o arquivo README.md, converte seu conteúdo para
+       HTML e o insere dinamicamente na página.
+       ===================================================== -->
+
+  <script>
+
+    async function loadReadme() {
+
+      const container =
+        document.getElementById("readme-content");
+
+
+      /* ===================================================
+         11.1. LEITURA DO README
+         ---------------------------------------------------
+         Busca sempre a versão mais recente do README,
+         evitando reutilização de conteúdo em cache.
+         =================================================== */
+
+      try {
+
+        const response = await fetch(
+          "README.md?v=" + Date.now(),
+          {
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+
+          throw new Error(
+            "Erro ao carregar README.md: " +
+            response.status
+          );
+
+        }
+
+
+        /* =================================================
+           11.2. CONVERSÃO MARKDOWN → HTML
+           -------------------------------------------------
+           Converte integralmente o README para HTML,
+           preservando títulos, listas, links, imagens,
+           badges e blocos HTML existentes.
+           ================================================= */
+
+        const markdown = await response.text();
+
+        marked.setOptions({
+          gfm: true,
+          breaks: false
+        });
+
+        container.innerHTML =
+          marked.parse(markdown);
+
+
+        /* =================================================
+           11.3. IMAGEM DE PERFIL NO TÍTULO
+           -------------------------------------------------
+           Localiza o primeiro H1 gerado pelo README e
+           insere a imagem de perfil antes do nome.
+           ================================================= */
+
+        const firstTitle =
+          container.querySelector("h1");
+
+        if (firstTitle) {
+
+          const profileImage =
+            document.createElement("img");
+
+          profileImage.src =
+            "assets/images/site-perfil.png";
+
+          profileImage.alt =
+            "Caroline Matiazi Xavier";
+
+          profileImage.className =
+            "profile-title-image";
+
+          firstTitle.classList.add(
+            "profile-title"
+          );
+
+          firstTitle.insertBefore(
+            profileImage,
+            firstTitle.firstChild
+          );
+
+        }
+
+
+        /* =================================================
+           11.4. LINKS EXTERNOS
+           -------------------------------------------------
+           Links externos são abertos em nova aba.
+
+           Links internos continuam funcionando na
+           própria página.
+           ================================================= */
+
+        const links =
+          container.querySelectorAll("a");
+
+        links.forEach((link) => {
+
+          const href =
+            link.getAttribute("href");
+
+          if (
+            href &&
+            (
+              href.startsWith("http://") ||
+              href.startsWith("https://")
+            )
+          ) {
+
+            link.setAttribute(
+              "target",
+              "_blank"
+            );
+
+            link.setAttribute(
+              "rel",
+              "noopener noreferrer"
+            );
+
+          }
+
+        });
+
+
+      /* ===================================================
+         11.5. TRATAMENTO DE ERRO
+         ---------------------------------------------------
+         Caso o README não possa ser carregado, exibe uma
+         mensagem amigável no lugar do conteúdo.
+         =================================================== */
+
+      } catch (error) {
+
+        console.error(error);
+
+        container.innerHTML = `
+          <h1>Portfólio temporariamente indisponível</h1>
+
+          <p>
+            Não foi possível carregar o conteúdo do README.
+          </p>
+        `;
+
+      }
+
+    }
+
+
+    /* =====================================================
+       12. INICIALIZAÇÃO
+       -----------------------------------------------------
+       Executa o carregamento do README assim que o script
+       é processado pelo navegador.
+       ===================================================== */
+
+    loadReadme();
+
+  </script>
+
+</body>
+
+</html>
