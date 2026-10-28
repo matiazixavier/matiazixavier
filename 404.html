@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <!-- =====================================================
+       01. CONFIGURAÇÕES BÁSICAS
+       ===================================================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <!-- =====================================================
+       02. SEO
+       -----------------------------------------------------
+       Páginas inexistentes não devem ser indexadas.
+       ===================================================== -->
+
+  <meta
+    name="robots"
+    content="noindex, nofollow"
+  >
+
+  <title>Página não encontrada | Caroline Matiazi Xavier</title>
+
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       03. REDIRECIONAMENTO DE ROTAS ANTIGAS
+       -----------------------------------------------------
+       Qualquer endereço antigo iniciado por /mx é
+       redirecionado para a página principal atual.
+       ===================================================== -->
+
+  <script>
+
+    const path = window.location.pathname;
+
+    if (
+      path === "/mx" ||
+      path.startsWith("/mx/")
+    ) {
+
+      window.location.replace(
+        "https://matiazixavier.com.br/"
+      );
+
+    }
+
+  </script>
+
+
+  <!-- =====================================================
+       04. FALLBACK 404
+       -----------------------------------------------------
+       Exibido somente para URLs inexistentes que não
+       pertencem à antiga estrutura /mx.
+       ===================================================== -->
+
+  <main>
+
+    <h1>404</h1>
+
+    <p>
+      A página que você tentou acessar não foi encontrada.
+    </p>
+
+    <p>
+      <a href="https://matiazixavier.com.br/">
+        Voltar para o portfólio
+      </a>
+    </p>
+
+  </main>
+
+</body>
+
+</html>

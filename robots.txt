@@ -1,0 +1,19 @@
+# =========================================================
+# 01. REGRAS GERAIS DE RASTREAMENTO
+# ---------------------------------------------------------
+# Permite que todos os mecanismos de busca rastreiem
+# todas as áreas públicas do site.
+# =========================================================
+
+User-agent: *
+Allow: /
+
+
+# =========================================================
+# 02. SITEMAP
+# ---------------------------------------------------------
+# Informa aos mecanismos de busca onde está localizado
+# o mapa das páginas públicas do portfólio.
+# =========================================================
+
+Sitemap: https://matiazixavier.com.br/sitemap.xml
